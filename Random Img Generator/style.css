@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Supermercado One", sans-serif;
+}
+#container{
+    width:100vw;
+    height: 100vh;
+    background-image: url(images/14.jpg); 
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#inner_container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    position: relative;
+}
+
+.head {
+position: absolute;
+top:20%;
+text-align: center;
+padding:20px;
+
+}
+
+.head img{
+    width:100px;
+    height:100px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px white, 0 0 40px gold;
+    border:4px groove black;
+    margin-bottom: 10px;
+
+}
+
+.head h1{
+    font-size: 2.6rem;
+    font-weight: 600;
+    color:black;
+    text-shadow: 0 0 20px white, 0 0 40px gold;
+    
+
+}
+span{
+    color:gold;
+    font-weight:600;
+    text-shadow: 0 0 20px black, 0 0 40px black;
+}
+.head p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:black;
+    margin-top: 10px;
+    text-shadow: 0 0 20px white, 0 0 40px gold;
+
+}
+
+.head i{
+    font-size: 1.5rem;
+    color:black;
+    border: 4px groove black;
+    margin-top: 10px;
+    border-radius: 50%;
+    padding:15px;
+    position: relative;
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+    box-shadow: 0 0 20px white, 0 0 40px gold;
+
+}
+
+@keyframes myfirst {
+    0%   {background: #00FFFF; bottom: 0px; top: 0px;}
+    25%  {background: #9D00FF; bottom: 500px; top: 0px;}
+    50%  {background: #FF00FF; bottom: 500px; top: 200px;}
+    75%  {background: #E6FB04; bottom: 0px; top: 200px;}
+    100% {background: #00FF33; bottom: 0px; top: 0px;}
+  }
+
+#inner_container #image_shower{
+    
+   width:500px;
+   height:500px;
+   margin-top:3rem;
+    border-radius: 10px;
+    border:4px groove black;
+    background-image: url(images/15.jpg); 
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 20px white, 0 0 40px gold;
+   
+
+}
+#button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin:10px;
+    padding:10px;
+
+}
+
+#button_container button{
+    margin-top: 20px;
+    padding:10px;
+    font-size: 1.3em;
+    font-style: 600;
+    border: 3px solid black;
+    border-radius: 10px;
+    color:black;
+    background-color: gold;
+    text-shadow: 0 0 20px white, 0 0 40px gold;
+
+}
+
+#button_container button:hover{
+    box-shadow: 0 0 20px white, 0 0 40px gold;
+
+}
+
+ @media (max-width:480px){
+    #inner_container #image_shower{
+    
+        width:350px;
+         height:350px;
+        margin-top:7rem;
+          border-radius: 10px;
+         border:3px solid black;
+         
+         }
+
+     #button_container button{
+        margin-top: 20px;
+        padding:10px;
+        font-size: 15px;
+        font-style: 600;
+        border: 3px solid black;
+        border-radius: 10px;
+        color:black;
+        text-shadow: 0 0 20px white, 0 0 40px white;
+    }
+
+    .head {
+        z-index:1000;
+        top:40%;
+    }
+    .head img{
+        width:60px;
+        height:60px;
+    }
+    .head h1{
+        font-size: 1.7em;
+    }
+    .head p{
+        font-size: 0.8em;
+    }
+
+    .head i{
+        font-size: 0.8rem;
+        padding:10px;
+        position: relative;
+    animation: myfirst 5s infinite;
+    animation-direction: alternate;
+
+    }
+    @keyframes myfirst {
+        0%   {background: #00FFFF; bottom: 0px; top: 0px;}
+        25%  {background: #9D00FF; bottom: 130px; top: 0px;}
+        50%  {background: #FF00FF; bottom: 130px; top: 130px;}
+        75%  {background: #E6FB04; bottom: 0px; top: 130px;}
+        100% {background: #00FF33; bottom: 0px; top: 0px;}
+      }
+   
+   
+
+   
+}   
